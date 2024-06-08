@@ -4,7 +4,7 @@
         <title>以太之海</title>
         <link>https://blog.vuejs.org</link>
         <description>A VitePress site</description>
-        <lastBuildDate>Sat, 08 Jun 2024 10:57:52 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 08 Jun 2024 16:45:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -112,7 +112,14 @@
   &quot;tags&quot;: [
     &quot;devpage&quot;
   ]
-}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div><div class="content nav"><span><a href="/posts/markdown-examples.html"><i class="fa fa-angle-left"></i> Markdown 示例</a></span><span><a href="/posts/cover-examples.html">封面与预览示例 <i class="fa fa-angle-right"></i></a></span></div><div id="waline"></div></div><!--]-->]]></content:encoded>
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div><div class="content nav"><span><a href="/posts/markdown-examples.html"><i class="fa fa-angle-left"></i> Markdown 示例</a></span><span><a href="/posts/image_test.html">图片组件测试 <i class="fa fa-angle-right"></i></a></span></div><div id="waline"></div></div><!--]-->]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[图片组件测试]]></title>
+            <link>https://blog.vuejs.orgposts/image_test.html</link>
+            <guid>https://blog.vuejs.orgposts/image_test.html</guid>
+            <pubDate>Sat, 08 Jun 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<a href="#" class="totop" style="top:-900px;" aria-label="to-top"></a><!--[--><div class="abanner" style="background-image: url(../2022-9-5_18-35-35.png)"><div class="titlebox"><h1 class="title">图片组件测试</h1><div class="info">🌟的笔记本 · 更新于 2024-06-08</div></div></div><div class="article"><div style="position:relative;" class="content"><div><p><img src="/assets/2022-9-5_18-35-35.BDgsurfz.png" alt="测试图片" title="测试图片"></p><ul><li>上方这张是 Markdown 图片</li><li>下方这张是 Medium Zoom 组件图片</li></ul><img src="../static/2022-9-5_18-35-35.png" alt="测试图片" title="测试图片"></div></div><div class="content nav"><span><a href="/posts/api-examples.html"><i class="fa fa-angle-left"></i> API 示例</a></span><span><a href="/posts/cover-examples.html">封面与预览示例 <i class="fa fa-angle-right"></i></a></span></div><div id="waline"></div></div><!--]-->]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[封面与预览示例]]></title>
@@ -121,7 +128,7 @@
             <pubDate>Fri, 02 Jan 1970 00:00:00 GMT</pubDate>
             <description><![CDATA[<p>这里的文字会作为预览显示在文章列表中。</p>
 ]]></description>
-            <content:encoded><![CDATA[<a href="#" class="totop" style="top:-900px;" aria-label="to-top"></a><!--[--><div class="abanner" style="background-image: url(../cover-exp.jpg)"><div class="titlebox"><h1 class="title">封面与预览示例</h1><div class="info">🌟的笔记本 · 更新于 1970-01-02</div></div></div><div class="article"><div style="position:relative;" class="content"><div><p>这里的文字会作为预览显示在文章列表中。</p><hr><p>这里的文字点进文章才能看到。</p><p>封面可以是网络地址，也可以是绝对路径。需要使用引号包含。</p><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>最好不要使用相对路径，容易出错。</p></div></div></div><div class="content nav"><span><a href="/posts/api-examples.html"><i class="fa fa-angle-left"></i> API 示例</a></span><span><!----></span></div><div id="waline"></div></div><!--]-->]]></content:encoded>
+            <content:encoded><![CDATA[<a href="#" class="totop" style="top:-900px;" aria-label="to-top"></a><!--[--><div class="abanner" style="background-image: url(../cover-exp.jpg)"><div class="titlebox"><h1 class="title">封面与预览示例</h1><div class="info">🌟的笔记本 · 更新于 1970-01-02</div></div></div><div class="article"><div style="position:relative;" class="content"><div><p>这里的文字会作为预览显示在文章列表中。</p><hr><p>这里的文字点进文章才能看到。</p><p>封面可以是网络地址，也可以是绝对路径。需要使用引号包含。</p><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>最好不要使用相对路径，容易出错。</p></div></div></div><div class="content nav"><span><a href="/posts/image_test.html"><i class="fa fa-angle-left"></i> 图片组件测试</a></span><span><!----></span></div><div id="waline"></div></div><!--]-->]]></content:encoded>
         </item>
     </channel>
 </rss>
