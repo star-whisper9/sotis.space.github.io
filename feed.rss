@@ -4,7 +4,7 @@
         <title>以太之海</title>
         <link>https://blog.vuejs.org</link>
         <description>A VitePress site</description>
-        <lastBuildDate>Sat, 08 Jun 2024 10:08:02 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 08 Jun 2024 10:12:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-CN</language>
@@ -121,7 +121,7 @@
             <pubDate>Fri, 02 Jan 1970 00:00:00 GMT</pubDate>
             <description><![CDATA[<p>这里的文字会作为预览显示在文章列表中。</p>
 ]]></description>
-            <content:encoded><![CDATA[<a href="#" class="totop" style="top:-900px;" aria-label="to-top"></a><!--[--><div class="abanner" style="background-image: url(../cover-exp.jpg)"><div class="titlebox"><h1 class="title">封面与预览示例</h1><div class="info">🌟的笔记本 · 更新于 1970-01-02</div></div></div><div class="article"><div style="position:relative;" class="content"><div><p>这里的文字会作为预览显示在文章列表中。</p><hr><p>这里的文字点进文章才能看到。</p><p>封面可以是网络地址，也可以是相对路径。需要使用引号包含。</p></div></div><div class="content nav"><span><a href="/posts/api-examples.html"><i class="fa fa-angle-left"></i> API 示例</a></span><span><!----></span></div><div id="waline"></div></div><!--]-->]]></content:encoded>
+            <content:encoded><![CDATA[<a href="#" class="totop" style="top:-900px;" aria-label="to-top"></a><!--[--><div class="abanner" style="background-image: url(../cover-exp.jpg)"><div class="titlebox"><h1 class="title">封面与预览示例</h1><div class="info">🌟的笔记本 · 更新于 1970-01-02</div></div></div><div class="article"><div style="position:relative;" class="content"><div><p>这里的文字会作为预览显示在文章列表中。</p><hr><p>这里的文字点进文章才能看到。</p><p>封面可以是网络地址，也可以是绝对路径。需要使用引号包含。</p><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>最好不要使用相对路径，容易出错。</p></div></div></div><div class="content nav"><span><a href="/posts/api-examples.html"><i class="fa fa-angle-left"></i> API 示例</a></span><span><!----></span></div><div id="waline"></div></div><!--]-->]]></content:encoded>
         </item>
     </channel>
 </rss>
