@@ -1,1 +1,0 @@
-import{_ as t,c as e,a as r,x as a}from"./chunks/framework.D2ePgMJG.js";const b=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),o={name:"README.md"},s=a("",6),d=[s];function n(i,c,h,_,l,g){return r(),e("div",null,d)}const u=t(o,[["render",n]]);export{b as __pageData,u as default};
