@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>API 示例 | 以太之海</title>
+    <meta name="description" content="A VitePress site">
+    <meta name="generator" content="VitePress v1.2.3">
+    <link rel="preload stylesheet" href="/assets/style.BD-zb_wq.css" as="style">
+    
+    <script type="module" src="/assets/app.C44A4pbN.js"></script>
+    <link rel="modulepreload" href="/assets/chunks/framework.76EObW2Q.js">
+    <link rel="modulepreload" href="/assets/chunks/theme.BNtUgHPF.js">
+    <link rel="modulepreload" href="/assets/posts_api-examples.md.7brL_APO.lean.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ubuntu-mono@5.0.20/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
+    <script src="https://cdn.jsdelivr.net/npm/@waline/client@1.5.4/dist/Waline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+    <link rel="icon" href="../favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DN9LMWDX2"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-7DN9LMWDX2");</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><!--[--><!----><aside></aside><main><a href="#" class="totop" style="top:-900px;" aria-label="to-top"></a><!--[--><div class="abanner" style="background-image: url(../110777046_p1.jpg)"><div class="titlebox"><h1 class="title">API 示例</h1><div class="info">🌟的笔记本 · 更新于 2024-06-08</div></div></div><div class="article"><div style="position:relative;" class="content"><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-light vp-code" tabindex="0"><code><span class="line"><span style="color:#24292E;">&lt;</span><span style="color:#22863A;">script</span><span style="color:#6F42C1;"> setup</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"><span style="color:#D73A49;">import</span><span style="color:#24292E;"> { useData } </span><span style="color:#D73A49;">from</span><span style="color:#032F62;"> &#39;vitepress&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> { </span><span style="color:#005CC5;">theme</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">page</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">frontmatter</span><span style="color:#24292E;"> } </span><span style="color:#D73A49;">=</span><span style="color:#6F42C1;"> useData</span><span style="color:#24292E;">()</span></span>
+<span class="line"><span style="color:#24292E;">&lt;/</span><span style="color:#22863A;">script</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#005CC5;font-weight:bold;">## Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#005CC5;font-weight:bold;">### Theme Data</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">&lt;</span><span style="color:#22863A;">pre</span><span style="color:#24292E;">&gt;{{ theme }}&lt;/</span><span style="color:#22863A;">pre</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">### Page Data</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">&lt;</span><span style="color:#22863A;">pre</span><span style="color:#24292E;">&gt;{{ page }}&lt;/</span><span style="color:#22863A;">pre</span><span style="color:#24292E;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">### Page Frontmatter</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">&lt;</span><span style="color:#22863A;">pre</span><span style="color:#24292E;">&gt;{{ frontmatter }}&lt;/</span><span style="color:#22863A;">pre</span><span style="color:#24292E;">&gt;</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;name&quot;: &quot;🌟的笔记本&quot;,
+  &quot;hello&quot;: &quot;🌟世界！&quot;,
+  &quot;motto&quot;: &quot;Bright star, would I were stedfast as thou art.&quot;,
+  &quot;cover&quot;: &quot;../110777046_p1.jpg&quot;,
+  &quot;social&quot;: [
+    {
+      &quot;icon&quot;: &quot;fa-github&quot;,
+      &quot;url&quot;: &quot;https://github.com/star-whisper9&quot;
+    },
+    {
+      &quot;icon&quot;: &quot;fa-steam&quot;,
+      &quot;url&quot;: &quot;https://steamcommunity.com/id/Star-Whisper-S/&quot;
+    }
+  ]
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;API 示例&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;title&quot;: &quot;API 示例&quot;,
+    &quot;date&quot;: &quot;2024-06-08T00:00:00.000Z&quot;,
+    &quot;tags&quot;: [
+      &quot;devpage&quot;
+    ]
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;posts/api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;posts/api-examples.md&quot;
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;API 示例&quot;,
+  &quot;date&quot;: &quot;2024-06-08T00:00:00.000Z&quot;,
+  &quot;tags&quot;: [
+    &quot;devpage&quot;
+  ]
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div><div class="content nav"><span><a href="/posts/drg-texture-mod-guide.html"><i class="fa fa-angle-left"></i> Basic Texture Modding Guide for DRG</a></span><span><a href="/posts/image_test.html">图片组件测试 <i class="fa fa-angle-right"></i></a></span></div><div id="waline"></div></div><!--]--></main><footer><div class="copyright"> © 2024 <a href="https://github.com/star-whisper9">starwhisper9</a>. All rights reserved. </div><div class="datetime"></div></footer><!--]--></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"posts_cover-examples.md\":\"DO4Gosrc\",\"posts_java-3.md\":\"CMcLpW4g\",\"posts_drg-texture-mod-guide.md\":\"Y4dCNq5R\",\"posts_markdown-examples.md\":\"685yv3mw\",\"posts_java-2.md\":\"CXrDhrdu\",\"readme.md\":\"BLAhOk-v\",\"posts_image_test.md\":\"wEGV9Rbg\",\"tags_index.md\":\"Wx99a2Lr\",\"posts_api-examples.md\":\"7brL_APO\",\"index.md\":\"CBGza2EI\",\"posts_java-1.md\":\"piJ6FIpD\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"以太之海\",\"description\":\"A VitePress site\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":false,\"themeConfig\":{\"name\":\"🌟的笔记本\",\"hello\":\"🌟世界！\",\"motto\":\"Bright star, would I were stedfast as thou art.\",\"cover\":\"../110777046_p1.jpg\",\"social\":[{\"icon\":\"fa-github\",\"url\":\"https://github.com/star-whisper9\"},{\"icon\":\"fa-steam\",\"url\":\"https://steamcommunity.com/id/Star-Whisper-S/\"}]},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>

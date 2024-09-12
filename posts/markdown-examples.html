@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Markdown 示例 | 以太之海</title>
+    <meta name="description" content="A VitePress site">
+    <meta name="generator" content="VitePress v1.2.3">
+    <link rel="preload stylesheet" href="/assets/style.BD-zb_wq.css" as="style">
+    
+    <script type="module" src="/assets/app.C44A4pbN.js"></script>
+    <link rel="modulepreload" href="/assets/chunks/framework.76EObW2Q.js">
+    <link rel="modulepreload" href="/assets/chunks/theme.BNtUgHPF.js">
+    <link rel="modulepreload" href="/assets/posts_markdown-examples.md.685yv3mw.lean.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ubuntu-mono@5.0.20/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
+    <script src="https://cdn.jsdelivr.net/npm/@waline/client@1.5.4/dist/Waline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+    <link rel="icon" href="../favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DN9LMWDX2"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-7DN9LMWDX2");</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><!--[--><!----><aside></aside><main><a href="#" class="totop" style="top:-900px;" aria-label="to-top"></a><!--[--><div class="abanner" style="background-image: url(../110777046_p1.jpg)"><div class="titlebox"><h1 class="title">Markdown 示例</h1><div class="info">🌟的笔记本 · 更新于 2024-06-08</div></div></div><div class="article"><div style="position:relative;" class="content"><div><h1 id="markdown-extension-examples" tabindex="-1">Markdown Extension Examples <a class="header-anchor" href="#markdown-extension-examples" aria-label="Permalink to &quot;Markdown Extension Examples&quot;">​</a></h1><p>This page demonstrates some of the built-in markdown extensions provided by VitePress.</p><h2 id="syntax-highlighting" tabindex="-1">Syntax Highlighting <a class="header-anchor" href="#syntax-highlighting" aria-label="Permalink to &quot;Syntax Highlighting&quot;">​</a></h2><p>VitePress provides Syntax Highlighting powered by <a href="https://github.com/shikijs/shiki" target="_blank" rel="noreferrer">Shiki</a>, with additional features like line-highlighting:</p><p><strong>Input</strong></p><div class="language-md line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-light vp-code" tabindex="0"><code><span class="line"><span style="color:#24292E;">```js{4}</span></span>
+<span class="line"><span style="color:#D73A49;">export</span><span style="color:#D73A49;"> default</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#6F42C1;">  data</span><span style="color:#24292E;"> () {</span></span>
+<span class="line"><span style="color:#D73A49;">    return</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#24292E;">      msg: </span><span style="color:#032F62;">&#39;Highlighted!&#39;</span></span>
+<span class="line"><span style="color:#24292E;">    }</span></span>
+<span class="line"><span style="color:#24292E;">  }</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span>
+<span class="line"><span style="color:#24292E;">```</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><strong>Output</strong></p><div class="language-js line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-light vp-code" tabindex="0"><code><span class="line"><span style="color:#D73A49;">export</span><span style="color:#D73A49;"> default</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#6F42C1;">  data</span><span style="color:#24292E;"> () {</span></span>
+<span class="line"><span style="color:#D73A49;">    return</span><span style="color:#24292E;"> {</span></span>
+<span class="line highlighted"><span style="color:#24292E;">      msg: </span><span style="color:#032F62;">&#39;Highlighted!&#39;</span></span>
+<span class="line"><span style="color:#24292E;">    }</span></span>
+<span class="line"><span style="color:#24292E;">  }</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="custom-containers" tabindex="-1">Custom Containers <a class="header-anchor" href="#custom-containers" aria-label="Permalink to &quot;Custom Containers&quot;">​</a></h2><p><strong>Input</strong></p><div class="language-md line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-light vp-code" tabindex="0"><code><span class="line"><span style="color:#24292E;">::: info</span></span>
+<span class="line"><span style="color:#24292E;">This is an info box.</span></span>
+<span class="line"><span style="color:#24292E;">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">::: tip</span></span>
+<span class="line"><span style="color:#24292E;">This is a tip.</span></span>
+<span class="line"><span style="color:#24292E;">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">::: warning</span></span>
+<span class="line"><span style="color:#24292E;">This is a warning.</span></span>
+<span class="line"><span style="color:#24292E;">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">::: danger</span></span>
+<span class="line"><span style="color:#24292E;">This is a dangerous warning.</span></span>
+<span class="line"><span style="color:#24292E;">:::</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#24292E;">::: details</span></span>
+<span class="line"><span style="color:#24292E;">This is a details block.</span></span>
+<span class="line"><span style="color:#24292E;">:::</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p><strong>Output</strong></p><div class="info custom-block"><p class="custom-block-title">INFO</p><p>This is an info box.</p></div><div class="tip custom-block"><p class="custom-block-title">TIP</p><p>This is a tip.</p></div><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>This is a warning.</p></div><div class="danger custom-block"><p class="custom-block-title">DANGER</p><p>This is a dangerous warning.</p></div><details class="details custom-block"><summary>Details</summary><p>This is a details block.</p></details><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/guide/markdown" target="_blank" rel="noreferrer">full list of markdown extensions</a>.</p></div></div><div class="content nav"><span><a href="/posts/image_test.html"><i class="fa fa-angle-left"></i> 图片组件测试</a></span><span><a href="/posts/cover-examples.html">封面与预览示例 <i class="fa fa-angle-right"></i></a></span></div><div id="waline"></div></div><!--]--></main><footer><div class="copyright"> © 2024 <a href="https://github.com/star-whisper9">starwhisper9</a>. All rights reserved. </div><div class="datetime"></div></footer><!--]--></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"posts_cover-examples.md\":\"DO4Gosrc\",\"posts_java-3.md\":\"CMcLpW4g\",\"posts_drg-texture-mod-guide.md\":\"Y4dCNq5R\",\"posts_markdown-examples.md\":\"685yv3mw\",\"posts_java-2.md\":\"CXrDhrdu\",\"readme.md\":\"BLAhOk-v\",\"posts_image_test.md\":\"wEGV9Rbg\",\"tags_index.md\":\"Wx99a2Lr\",\"posts_api-examples.md\":\"7brL_APO\",\"index.md\":\"CBGza2EI\",\"posts_java-1.md\":\"piJ6FIpD\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"以太之海\",\"description\":\"A VitePress site\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":false,\"themeConfig\":{\"name\":\"🌟的笔记本\",\"hello\":\"🌟世界！\",\"motto\":\"Bright star, would I were stedfast as thou art.\",\"cover\":\"../110777046_p1.jpg\",\"social\":[{\"icon\":\"fa-github\",\"url\":\"https://github.com/star-whisper9\"},{\"icon\":\"fa-steam\",\"url\":\"https://steamcommunity.com/id/Star-Whisper-S/\"}]},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
