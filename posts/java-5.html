@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java 学习入门 5 | 以太之海</title>
+    <meta name="description" content="A VitePress site">
+    <meta name="generator" content="VitePress v1.2.3">
+    <link rel="preload stylesheet" href="/assets/style.BD-zb_wq.css" as="style">
+    
+    <script type="module" src="/assets/app.DwOYT49r.js"></script>
+    <link rel="modulepreload" href="/assets/chunks/framework.BmiwJf14.js">
+    <link rel="modulepreload" href="/assets/chunks/theme.B8jTbhng.js">
+    <link rel="modulepreload" href="/assets/chunks/katex.CvgdMzdh.js">
+    <link rel="modulepreload" href="/assets/chunks/c4Diagram-ae766693.BvKN1CsD.js">
+    <link rel="modulepreload" href="/assets/chunks/flowDiagram-b222e15a.GIe-6FAK.js">
+    <link rel="modulepreload" href="/assets/chunks/flowDiagram-v2-13329dc7.CJNtozdZ.js">
+    <link rel="modulepreload" href="/assets/chunks/erDiagram-09d1c15f.BZtSY0mT.js">
+    <link rel="modulepreload" href="/assets/chunks/gitGraphDiagram-942e62fe.u3Vxj2Ce.js">
+    <link rel="modulepreload" href="/assets/chunks/ganttDiagram-b62c793e.i8TWCBW8.js">
+    <link rel="modulepreload" href="/assets/chunks/infoDiagram-94cd232f.DyzKZVmL.js">
+    <link rel="modulepreload" href="/assets/chunks/pieDiagram-bb1d19e5.K8wBdJ-w.js">
+    <link rel="modulepreload" href="/assets/chunks/quadrantDiagram-c759a472.B-PxRgDI.js">
+    <link rel="modulepreload" href="/assets/chunks/xychartDiagram-f11f50a6.CNi9FxSy.js">
+    <link rel="modulepreload" href="/assets/chunks/requirementDiagram-87253d64.BbbX_pzJ.js">
+    <link rel="modulepreload" href="/assets/chunks/sequenceDiagram-6894f283.Df8nwJ2v.js">
+    <link rel="modulepreload" href="/assets/chunks/classDiagram-fb54d2a0.DtAsLSiY.js">
+    <link rel="modulepreload" href="/assets/chunks/classDiagram-v2-a2b738ad.Dm0Bue7D.js">
+    <link rel="modulepreload" href="/assets/chunks/stateDiagram-5dee940d.u8zZrRzg.js">
+    <link rel="modulepreload" href="/assets/chunks/stateDiagram-v2-1992cada.HazzLJdG.js">
+    <link rel="modulepreload" href="/assets/chunks/journeyDiagram-6625b456.BdQsJ4-G.js">
+    <link rel="modulepreload" href="/assets/chunks/flowchart-elk-definition-ae0efee6.BMD-Q3eU.js">
+    <link rel="modulepreload" href="/assets/chunks/timeline-definition-bf702344.BC2qBa8l.js">
+    <link rel="modulepreload" href="/assets/chunks/mindmap-definition-307c710a.C7LoFoiY.js">
+    <link rel="modulepreload" href="/assets/chunks/sankeyDiagram-707fac0f.DnpfuNaE.js">
+    <link rel="modulepreload" href="/assets/chunks/blockDiagram-9f4a6865.Bi5Ctz8X.js">
+    <link rel="modulepreload" href="/assets/chunks/virtual_mermaid-config.DDnGl6nM.js">
+    <link rel="modulepreload" href="/assets/posts_java-5.md.CGa_pJlC.lean.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ubuntu-mono@5.0.20/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
+    <script src="https://cdn.jsdelivr.net/npm/@waline/client@1.5.4/dist/Waline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+    <link rel="icon" href="../favicon.ico">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DN9LMWDX2"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-7DN9LMWDX2");</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><!--[--><!----><aside></aside><main><a href="#" class="totop" style="top:-900px;" aria-label="to-top"></a><!--[--><div class="abanner" style="background-image: url(../cover-java.png)"><div class="titlebox"><h1 class="title">Java 学习入门 5</h1><div class="info">🌟的笔记本 · 更新于 2024-09-13</div></div></div><div class="article"><div style="position:relative;" class="content"><div><h1 id="面向对象" tabindex="-1">面向对象 <a class="header-anchor" href="#面向对象" aria-label="Permalink to &quot;面向对象&quot;">​</a></h1><hr><nav class="table-of-contents"><ul><li><a href="#静态变量和静态方法">静态变量和静态方法</a></li><li><a href="#访问权限控制">访问权限控制</a></li><li><a href="#枚举类">枚举类</a><ul><li><a href="#定义简单枚举">定义简单枚举</a></li><li><a href="#带字段和方法的枚举">带字段和方法的枚举</a></li></ul></li></ul></nav><hr><blockquote><p>本章中略过了大部分面向对象编程的基础概念，仅重点记录 <code>静态变量和静态方法</code> <code>访问权限控制</code> <code>枚举类</code>。</p></blockquote><h2 id="静态变量和静态方法" tabindex="-1">静态变量和静态方法 <a class="header-anchor" href="#静态变量和静态方法" aria-label="Permalink to &quot;静态变量和静态方法&quot;">​</a></h2><p>使用 <code>static</code> 关键字修饰的变量和方法就是静态变量和静态方法。静态变量和静态方法属于类，而不是属于对象。它们在类加载时就会被初始化，不需要创建对象就可以访问。</p><div class="tip custom-block"><p class="custom-block-title">TIP</p><p>类的初始化时机</p><ul><li>创建类的实例</li><li>访问类的静态变量</li><li>调用类的静态方法</li><li>使用 <code>Class.forName()</code> 方法加载类（反射）</li><li>初始化类的子类</li><li>JVM 启动时加载的主类（包含 <code>main</code> 方法的类）</li></ul></div><h2 id="访问权限控制" tabindex="-1">访问权限控制 <a class="header-anchor" href="#访问权限控制" aria-label="Permalink to &quot;访问权限控制&quot;">​</a></h2><div class="mermaid"></div><table tabindex="0"><thead><tr><th>访问级别</th><th>当前类</th><th>同一个包下的类</th><th>不同包下的子类</th><th>不同包下的类</th></tr></thead><tbody><tr><td>public</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>protected</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td></tr><tr><td>默认</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td></tr><tr><td>private</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td></tr></tbody></table><h2 id="枚举类" tabindex="-1">枚举类 <a class="header-anchor" href="#枚举类" aria-label="Permalink to &quot;枚举类&quot;">​</a></h2><h3 id="定义简单枚举" tabindex="-1">定义简单枚举 <a class="header-anchor" href="#定义简单枚举" aria-label="Permalink to &quot;定义简单枚举&quot;">​</a></h3><div class="language-java line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">java</span><pre class="shiki github-light vp-code" tabindex="0"><code><span class="line"><span style="color:#6A737D;">// 定义枚举</span></span>
+<span class="line"><span style="color:#D73A49;">public</span><span style="color:#D73A49;"> enum</span><span style="color:#6F42C1;"> Day</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#005CC5;">    SUNDAY</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">MONDAY</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">TUESDAY</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">WEDNESDAY</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">THURSDAY</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">FRIDAY</span><span style="color:#24292E;">, </span><span style="color:#005CC5;">SATURDAY</span><span style="color:#24292E;">;</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;">// 使用枚举</span></span>
+<span class="line"><span style="color:#D73A49;">public</span><span style="color:#D73A49;"> class</span><span style="color:#6F42C1;"> EnumExample</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#D73A49;">    public</span><span style="color:#D73A49;"> static</span><span style="color:#D73A49;"> void</span><span style="color:#6F42C1;"> main</span><span style="color:#24292E;">(</span><span style="color:#D73A49;">String</span><span style="color:#24292E;">[] </span><span style="color:#E36209;">args</span><span style="color:#24292E;">) {</span></span>
+<span class="line"><span style="color:#24292E;">        Day today </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> Day.MONDAY;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;">        switch</span><span style="color:#24292E;"> (today) {</span></span>
+<span class="line"><span style="color:#D73A49;">            case</span><span style="color:#24292E;"> MONDAY</span><span style="color:#D73A49;">:</span></span>
+<span class="line"><span style="color:#24292E;">                System.out.</span><span style="color:#6F42C1;">println</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;Today is Monday.&quot;</span><span style="color:#24292E;">);</span></span>
+<span class="line"><span style="color:#D73A49;">                break</span><span style="color:#24292E;">;</span></span>
+<span class="line"><span style="color:#D73A49;">            case</span><span style="color:#24292E;"> TUESDAY</span><span style="color:#D73A49;">:</span></span>
+<span class="line"><span style="color:#24292E;">                System.out.</span><span style="color:#6F42C1;">println</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;Today is Tuesday.&quot;</span><span style="color:#24292E;">);</span></span>
+<span class="line"><span style="color:#D73A49;">                break</span><span style="color:#24292E;">;</span></span>
+<span class="line"><span style="color:#6A737D;">            // 其他情况...</span></span>
+<span class="line"><span style="color:#D73A49;">            default:</span></span>
+<span class="line"><span style="color:#24292E;">                System.out.</span><span style="color:#6F42C1;">println</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;Other day.&quot;</span><span style="color:#24292E;">);</span></span>
+<span class="line"><span style="color:#D73A49;">                break</span><span style="color:#24292E;">;</span></span>
+<span class="line"><span style="color:#24292E;">        }</span></span>
+<span class="line"><span style="color:#24292E;">    }</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3 id="带字段和方法的枚举" tabindex="-1">带字段和方法的枚举 <a class="header-anchor" href="#带字段和方法的枚举" aria-label="Permalink to &quot;带字段和方法的枚举&quot;">​</a></h3><div class="language-java line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">java</span><pre class="shiki github-light vp-code" tabindex="0"><code><span class="line"><span style="color:#6A737D;">// 定义带字段和方法的枚举</span></span>
+<span class="line"><span style="color:#D73A49;">public</span><span style="color:#D73A49;"> enum</span><span style="color:#6F42C1;"> Day</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#005CC5;">    SUNDAY</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;星期日&quot;</span><span style="color:#24292E;">), </span><span style="color:#005CC5;">MONDAY</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;星期一&quot;</span><span style="color:#24292E;">), </span><span style="color:#005CC5;">TUESDAY</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;星期二&quot;</span><span style="color:#24292E;">), </span><span style="color:#005CC5;">WEDNESDAY</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;星期三&quot;</span><span style="color:#24292E;">),</span></span>
+<span class="line"><span style="color:#005CC5;">    THURSDAY</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;星期四&quot;</span><span style="color:#24292E;">), </span><span style="color:#005CC5;">FRIDAY</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;星期五&quot;</span><span style="color:#24292E;">), </span><span style="color:#005CC5;">SATURDAY</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;星期六&quot;</span><span style="color:#24292E;">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;">    private</span><span style="color:#24292E;"> String chineseName;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;">    // 构造方法</span></span>
+<span class="line"><span style="color:#D73A49;">    private</span><span style="color:#6F42C1;"> Day</span><span style="color:#24292E;">(String </span><span style="color:#E36209;">chineseName</span><span style="color:#24292E;">) {</span></span>
+<span class="line"><span style="color:#005CC5;">        this</span><span style="color:#24292E;">.chineseName </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> chineseName;</span></span>
+<span class="line"><span style="color:#24292E;">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;">    // 获取中文名称的方法</span></span>
+<span class="line"><span style="color:#D73A49;">    public</span><span style="color:#24292E;"> String </span><span style="color:#6F42C1;">getChineseName</span><span style="color:#24292E;">() {</span></span>
+<span class="line"><span style="color:#D73A49;">        return</span><span style="color:#24292E;"> chineseName;</span></span>
+<span class="line"><span style="color:#24292E;">    }</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;">// 使用带字段和方法的枚举</span></span>
+<span class="line"><span style="color:#D73A49;">public</span><span style="color:#D73A49;"> class</span><span style="color:#6F42C1;"> EnumExample</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#D73A49;">    public</span><span style="color:#D73A49;"> static</span><span style="color:#D73A49;"> void</span><span style="color:#6F42C1;"> main</span><span style="color:#24292E;">(</span><span style="color:#D73A49;">String</span><span style="color:#24292E;">[] </span><span style="color:#E36209;">args</span><span style="color:#24292E;">) {</span></span>
+<span class="line"><span style="color:#24292E;">        Day today </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> Day.MONDAY;</span></span>
+<span class="line"><span style="color:#24292E;">        System.out.</span><span style="color:#6F42C1;">println</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&quot;Today is &quot;</span><span style="color:#D73A49;"> +</span><span style="color:#24292E;"> today </span><span style="color:#D73A49;">+</span><span style="color:#032F62;"> &quot;, in Chinese: &quot;</span><span style="color:#D73A49;"> +</span><span style="color:#24292E;"> today.</span><span style="color:#6F42C1;">getChineseName</span><span style="color:#24292E;">());</span></span>
+<span class="line"><span style="color:#24292E;">    }</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div></div></div><div class="content nav"><span><a href="/posts/java-6.html"><i class="fa fa-angle-left"></i> Java 学习入门 6</a></span><span><a href="/posts/java-4.html">Java 学习入门 4 <i class="fa fa-angle-right"></i></a></span></div><div id="waline"></div></div><!--]--></main><footer><div class="copyright"> © 2024 <a href="https://github.com/star-whisper9">starwhisper9</a>. All rights reserved. </div><div class="datetime"></div></footer><!--]--></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"posts_image_test.md\":\"C00nZ4c2\",\"index.md\":\"oWZRKmgs\",\"tags_index.md\":\"eae9XjUe\",\"readme.md\":\"BEbjU-Kc\",\"posts_mermaid.md\":\"DljDmiCo\",\"posts_cover-examples.md\":\"O9vda6NE\",\"posts_java-7.md\":\"DBqnrRO2\",\"posts_api-examples.md\":\"mv5qc9AR\",\"posts_java-5.md\":\"CGa_pJlC\",\"posts_java-2.md\":\"2dYoMZfk\",\"posts_drg-texture-mod-guide.md\":\"DsnBZsPQ\",\"posts_java-6.md\":\"oI-h5Ef2\",\"posts_java-4.md\":\"MC4ga8he\",\"posts_java-3.md\":\"aDY_uzcS\",\"posts_markdown-examples.md\":\"8G1N2V_Q\",\"posts_java-1.md\":\"DXt1doIb\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"以太之海\",\"description\":\"A VitePress site\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":false,\"themeConfig\":{\"name\":\"🌟的笔记本\",\"hello\":\"🌟世界！\",\"motto\":\"Bright star, would I were stedfast as thou art.\",\"cover\":\"../110777046_p1.jpg\",\"social\":[{\"icon\":\"fa-github\",\"url\":\"https://github.com/star-whisper9\"},{\"icon\":\"fa-steam\",\"url\":\"https://steamcommunity.com/id/Star-Whisper-S/\"}]},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
